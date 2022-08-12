@@ -1,16 +1,22 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Addproduct from "./pages/Addproduct";
 import Productpage from "./pages/Productpage";
 
 function App() {
   return (
-    <div>
+    <>
+     
+      <BrowserRouter>
+      <Header />
       <Routes>
-        <Route path="/" element={<Productpage />}/>
+        <Route exact path="/" element={<Productpage />}/>
         <Route path="/addproduct" element={<Addproduct />} />
       </Routes>
-    </div>
+      </BrowserRouter>
+      
+    </>
   );
 }
 
