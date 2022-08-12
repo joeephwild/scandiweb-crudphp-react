@@ -64,15 +64,17 @@ const handleInputChanges = (e) => {
   })
 }
 
+const Btn1 = () => (
+  <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>SAVE</button>
+)
+
 const Btn2 = () => (
   <Link to="/" >
     <button className='bg-red-600 text-white font-semibold text-lh px-4 py-2 rounded-xl'>CANCEL</button>
   </Link>
 )
 
-const Btn1 = () => (
-    <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>SAVE</button>
-)
+
 
 
 

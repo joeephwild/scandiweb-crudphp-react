@@ -8,7 +8,7 @@ const Productpage = () => {
 
   const Btn1 = () => (
     <Link to="/addproduct" >
-      <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>ADD PRODUCT</button>
+      <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>ADD</button>
     </Link>
   )
 
