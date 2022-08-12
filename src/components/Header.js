@@ -1,16 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ leftBtn, rightBtn}) => {
   return (
     <>
       <header className='flex items-center justify-between p-4 border-b border-gray-600'>
         <h2 className='text-zinc-700 font-bold text-2xl'>SCANDIWEB</h2>
         <div className='space-x-4'>
-            <Link to="/addproduct">
-            <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>Add product</button>
-            </Link>
-            <button className='bg-black text-white font-semibold text-lh px-4 py-2 rounded-xl'>DELETE</button>
+            { leftBtn() }
+            { rightBtn()}
         </div>
       </header>
     </>
